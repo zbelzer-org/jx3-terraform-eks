@@ -10,6 +10,7 @@ variable "region" {
 variable "profile" {
   description = "Profile stored in aws config or credentials file"
   type        = string
+  default     = "personal"
 }
 
 variable "cluster_version" {
@@ -69,4 +70,14 @@ variable "install_kuberhealthy" {
   description = "Flag to specify if kuberhealthy operator should be installed"
   type        = bool
   default     = true
+}
+
+variable "use_vault" {
+  type    = bool
+  default = false
+}
+
+variable "use_asm" {
+  type    = bool
+  default = true
 }

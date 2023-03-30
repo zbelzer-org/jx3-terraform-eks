@@ -13,6 +13,8 @@ module "eks-jx" {
   jx_git_url           = var.jx_git_url
   jx_bot_username      = var.jx_bot_username
   jx_bot_token         = var.jx_bot_token
+  use_vault            = var.use_vault
+  use_asm              = var.use_asm
   force_destroy        = var.force_destroy
   nginx_chart_version  = var.nginx_chart_version
   install_kuberhealthy = var.install_kuberhealthy
