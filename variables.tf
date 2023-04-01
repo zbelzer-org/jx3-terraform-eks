@@ -46,7 +46,7 @@ variable "is_jx2" {
 variable "jx_git_url" {
   description = "URL for the Jenins X cluster git repository"
   type        = string
-  default     = "git@github.com:zbelzer-org/jx3-eks-asm.git"
+  default     = "https://github.com/zbelzer-org/jx3-eks-asm.git"
 }
 
 variable "jx_bot_username" {
